@@ -2,6 +2,7 @@
 __author__ = 'sandlbn'
 
 from django.db import models
+from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
 from utils import datetime_to_timestamp
 
@@ -43,3 +44,10 @@ class CalendarEvent(models.Model):
 
     def __unicode__(self):
         return self.title
+
+
+class CalendarEventAdmin(admin.ModelAdmin):
+    class Meta:
+        model = CalendarEvent
+
+admin.site.register(CalendarEvent,CalendarEventAdmin)
