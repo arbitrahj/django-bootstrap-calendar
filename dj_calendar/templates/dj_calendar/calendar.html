@@ -1,0 +1,26 @@
+<!-- {% extends 'base.html' %} -->
+{% load i18n %}
+{% load bootstrap_calendar %}
+
+{% block content %}
+{% bootstrap_calendar_css %}
+{% bootstrap_calendar_js language="template" %}
+<div class="row-fluid">
+    <div class="span8 offset2">
+        {% bootstrap_calendar 'from-inline pull-right' %}
+        {% bootstrap_controls 'from-inline pull-right' %}
+        {% bootstrap_calendar_init language="template" %}
+    </div>
+</div>
+<div class="clear-fix">
+</div>
+<div class="row">
+    <div class="span12">
+
+
+      <!-- <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=matt.schoeneck%40aacengineering.com&amp;color=%231B887A&amp;src=craig%40aacengineering.com&amp;color=%23333333&amp;src=elizabeth.jones%40aacengineering.com&amp;color=%23711616&amp;src=sam.shold%40aacengineering.com&amp;color=%23875509&amp;ctz=America%2FChicago" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe> -->
+    </div>
+    <div class="span3">
+    </div>
+</div>
+{% endblock %}
