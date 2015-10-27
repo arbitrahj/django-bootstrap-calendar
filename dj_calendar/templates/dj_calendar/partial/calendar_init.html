@@ -1,7 +1,6 @@
 {% load bootstrap_calendar %}{% load static %}{% autoescape off %}{% minifyjs %}
 <script>
 (function($) {
-
     "use strict";
     var options = {
     events_source: '{{ events_url }}',
@@ -23,17 +22,24 @@
 };
 
 var	calendar = $('#calendar').calendar(options);
+$('#title_header').text(calendar.getTitle());
+
+
 	$('.btn-group button[data-calendar-nav]').each(function() {
 		var $this = $(this);
 		$this.click(function() {
 			calendar.navigate($this.data('calendar-nav'));
+      $('#title_header').text(calendar.getTitle());
 		});
 	});
+
+
 
 	$('.btn-group button[data-calendar-view]').each(function() {
 		var $this = $(this);
 		$this.click(function() {
 			calendar.view($this.data('calendar-view'));
+      $('#title_header').text(calendar.getTitle());
 		});
 	});
 }(jQuery));
