@@ -3,7 +3,7 @@ __author__ = 'sandlbn'
 
 from django import template
 from django.template.loader import render_to_string
-from django_bootstrap_calendar.utils import MinifyJs
+from dj_calendar.utils import MinifyJs
 
 register = template.Library()
 
@@ -14,7 +14,7 @@ def bootstrap_calendar(css_classes):
     return a calendar div if none push empty ""
     """
     return render_to_string(
-        'django_bootstrap_calendar/partial/calendar.html',
+        'dj_calendar/partial/calendar.html',
         {'css_classes': css_classes}
     )
 
@@ -25,7 +25,7 @@ def bootstrap_controls(css_classes):
     return a calendar controls div if none push empty ""
     """
     return render_to_string(
-        'django_bootstrap_calendar/partial/calendar_controls.html',
+        'dj_calendar/partial/calendar_controls.html',
         {'css_classes': css_classes}
     )
 
@@ -44,7 +44,7 @@ def bootstrap_calendar_js(*args, **kwargs):
         pass
 
     return render_to_string(
-        'django_bootstrap_calendar/partial/calendar_js.html',
+        'dj_calendar/partial/calendar_js.html',
         options
     )
 
@@ -55,7 +55,7 @@ def bootstrap_calendar_css(*args):
     return a boostrap calendar tag css files
     """
     return render_to_string(
-        'django_bootstrap_calendar/partial/calendar_css.html'
+        'dj_calendar/partial/calendar_css.html'
     )
 
 
@@ -90,7 +90,7 @@ def bootstrap_calendar_init(*args, **kwargs):
     except KeyError:
         options["width"] = '100%'
 
-    return render_to_string('django_bootstrap_calendar/partial/calendar_init.html', options)
+    return render_to_string('dj_calendar/partial/calendar_init.html', options)
 
 
 @register.tag

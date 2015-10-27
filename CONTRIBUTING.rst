@@ -13,7 +13,7 @@ Types of Contributions
 Report Bugs
 ~~~~~~~~~~~
 
-Report bugs at https://github.com/sandlbn/django_bootstrap_calendar/issues.
+Report bugs at https://github.com/sandlbn/dj_calendar/issues.
 
 If you are reporting a bug, please include:
 
@@ -43,7 +43,7 @@ articles, and such.
 Submit Feedback
 ~~~~~~~~~~~~~~~
 
-The best way to send feedback is to file an issue at https://github.com/sandlbn/django_bootstrap_calendar/issues.
+The best way to send feedback is to file an issue at https://github.com/sandlbn/dj_calendar/issues.
 
 If you are proposing a feature:
 
@@ -55,17 +55,17 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `django_bootstrap_calendar` for local development.
+Ready to contribute? Here's how to set up `dj_calendar` for local development.
 
-1. Fork the `django_bootstrap_calendar` repo on GitHub.
+1. Fork the `dj_calendar` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/django_bootstrap_calendar.git
+    $ git clone git@github.com:your_name_here/dj_calendar.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv django_bootstrap_calendar
-    $ cd django_bootstrap_calendar/
+    $ mkvirtualenv dj_calendar
+    $ cd dj_calendar/
     $ python setup.py develop
 
 4. Create a branch for local development::
@@ -77,7 +77,7 @@ Now you can make your changes locally.
 5. When you're done making changes, check that your changes pass flake8 and the
 tests, including testing other Python versions with tox::
 
-    $ flake8 django_bootstrap_calendar tests
+    $ flake8 dj_calendar tests
 	$ python setup.py test
     $ tox
 
@@ -101,7 +101,7 @@ Before you submit a pull request, check that it meets these guidelines:
    your new functionality into a function with a docstring, and add the
    feature to the list in README.rst.
 3. The pull request should work for Python 2.6, 2.7, and 3.3, and for PyPy. Check 
-   https://travis-ci.org/sandlbn/django_bootstrap_calendar/pull_requests
+   https://travis-ci.org/sandlbn/dj_calendar/pull_requests
    and make sure that the tests pass for all supported Python versions.
 
 Tips
@@ -109,4 +109,4 @@ Tips
 
 To run a subset of tests::
 
-	$ python -m unittest tests.test_django_bootstrap_calendar
+	$ python -m unittest tests.test_dj_calendar

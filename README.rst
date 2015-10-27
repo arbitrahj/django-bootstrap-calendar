@@ -22,7 +22,7 @@ settings.py::
 
     INSTALLED_APPS = (
     ...
-    'django_bootstrap_calendar',
+    'dj_calendar',
     ...
     )
 
@@ -30,7 +30,7 @@ urls.py::
 
     urlpatterns = patterns('',
     ...
-    (r'^calendar/', include('django_bootstrap_calendar.urls')),
+    (r'^calendar/', include('dj_calendar.urls')),
     ...
     )
 

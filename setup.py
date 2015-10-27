@@ -3,14 +3,14 @@
 import os
 import sys
 
-import django_bootstrap_calendar
+import dj_calendar
 
 try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
 
-version = django_bootstrap_calendar.__version__
+version = dj_calendar.__version__
 
 if sys.argv[-1] == 'publish':
     os.system('python setup.py sdist upload')
@@ -29,9 +29,9 @@ setup(
     long_description=readme + '\n\n' + history,
     author='Marcin Spoczynski',
     author_email='marcin@spoczynski.com',
-    url='https://github.com/sandlbn/django_bootstrap_calendar',
+    url='https://github.com/sandlbn/dj_calendar',
     packages=[
-        'django_bootstrap_calendar',
+        'dj_calendar',
     ],
     include_package_data=True,
     install_requires=[
@@ -39,7 +39,7 @@ setup(
     ],
     license="BSD",
     zip_safe=False,
-    keywords='django_bootstrap_calendar',
+    keywords='dj_calendar',
     classifiers=[
         'Development Status :: 2 - Pre-Alpha',
         'Framework :: Django',

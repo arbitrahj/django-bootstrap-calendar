@@ -1,1 +1,1 @@
-django_bootstrap_calendar
+dj_calendar

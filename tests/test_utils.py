@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 
 """
-test_django_bootstrap_calendar
+test_dj_calendar
 ------------
 
-Tests for `django_bootstrap_calendar` modules module.
+Tests for `dj_calendar` modules module.
 """
 
 import os
@@ -13,11 +13,11 @@ import shutil
 import unittest
 from datetime import datetime
 
-from django_bootstrap_calendar.utils import datetime_to_timestamp
-from django_bootstrap_calendar.utils import timestamp_to_datetime
+from dj_calendar.utils import datetime_to_timestamp
+from dj_calendar.utils import timestamp_to_datetime
 
 
-class TestDjango_bootstrap_calendar(unittest.TestCase):
+class Testdj_calendar(unittest.TestCase):
 
     def setUp(self):
         print "Running some basic test"

@@ -11,7 +11,7 @@ import datetime
 
 class CalendarJsonListView(ListView):
 
-    template_name = 'django_bootstrap_calendar/calendar_events.html'
+    template_name = 'dj_calendar/calendar_events.html'
 
     def get_queryset(self):
         queryset = CalendarEvent.objects.filter()
@@ -39,4 +39,4 @@ class CalendarJsonListView(ListView):
 
 class CalendarView(TemplateView):
 
-    template_name = 'django_bootstrap_calendar/calendar.html'
+    template_name = 'dj_calendar/calendar.html'

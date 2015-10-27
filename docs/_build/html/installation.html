@@ -62,14 +62,14 @@ $ python setup.py install</pre>
 <p>settings.py:</p>
 <div class="highlight-python"><pre>INSTALLED_APPS = (
 ...
-'django_bootstrap_calendar',
+'dj_calendar',
 ...
 )</pre>
 </div>
 <p>urls.py:</p>
 <div class="highlight-python"><div class="highlight"><pre><span class="n">urlpatterns</span> <span class="o">=</span> <span class="n">patterns</span><span class="p">(</span><span class="s">&#39;&#39;</span><span class="p">,</span>
 <span class="o">...</span>
-<span class="p">(</span><span class="s">r&#39;^calendar/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s">&#39;django_bootstrap_calendar.urls&#39;</span><span class="p">)),</span>
+<span class="p">(</span><span class="s">r&#39;^calendar/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s">&#39;dj_calendar.urls&#39;</span><span class="p">)),</span>
 <span class="o">...</span>
 <span class="p">)</span>
 </pre></div>
